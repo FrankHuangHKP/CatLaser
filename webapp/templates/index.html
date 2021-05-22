@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cat</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
+  <script src="{{url_for('static', filename='scripts/jquery-3.5.1.js')}}" type="text/javascript"></script>
+  <script src="{{url_for('static', filename='scripts/validation.js')}}" type="text/javascript" async></script>
+</head>
+
+<body>
+	<div class="head">
+		<h1>Play With Your Cats!</h1>
+		<img class="logo" src="static/PiCat_logo.png" alt="hua">
+	</div>
+	
+	<div class="all">
+		<div class="left">
+		<img id = "video" onclick="mouseclick(event)" src="http://172.20.1.191:8000/stream.mjpg"/>
+		</div>
+		
+		<div class="right">
+	
+			<form action="/save" method="post" target="out-iframe">
+				<div class="fb-input">
+					<p>Laser Toy: </p>
+					<input type="radio" id="laseron" name="laser" value="on"/>
+					<label for="laseron">ON</label>
+					
+					<input type="radio" id="laseroff" name="laser" value="off" />
+					<label for="laseroff">OFF</label>
+				</div>
+				
+				<div class="fb-input">
+					<p class="hidden" id="mode-label">Mode: </p>
+					<input class="hidden" type="radio" id="auto" name="mode" value="auto"/>
+					<label class="hidden" id="auto-label" for="auto">Auto</label>
+					
+					<input class="hidden" type="radio" id="manual" name="mode" value="manual" />
+					<label class="hidden" id="manual-label" for="manual">Manual</label>
+				</div>
+				
+				<div class="fb-input">
+					<label class="hidden" id="x-label" for="x">X: </label>
+					<input class="hidden" type="text" name="x" id="x" placeholder="300"/>
+				</div>
+				
+				<div class="fb-input">
+					<label class="hidden" id="y-label" for="y">Y: </label>
+					<input class="hidden" type="text" name="y" id="y" placeholder="300"/>
+				</div>
+			
+				<input class="submit" type="submit" value="Comfirm"/>
+			</form>
+			
+			<iframe name="out-iframe" class="hidden"></iframe>
+			
+		</div>
+		
+		<aside>
+		<img class="cats" src="static/huahua_2000px.jpg" alt="hua">
+		<img class="cats" src="static/ergou_2000px.jpg" alt="gou">
+		</aside>
+		
+	</div>
+	
+	<div class="images">
+		<img class="pictures" src="static/current_saved/cat1.jpg" alt="cat1">
+		<img class="pictures" src="static/current_saved/cat2.jpg" alt="cat2">
+		<img class="pictures" src="static/current_saved/cat3.jpg" alt="cat3">
+		<img class="pictures" src="static/current_saved/cat4.jpg" alt="cat4">
+	</div>
+	
+	<div class="images">
+		<img class="pictures" src="static/cat1.jpg" alt="cat1">
+		<img class="pictures" src="static/cat2.jpg" alt="cat2">
+		<img class="pictures" src="static/cat3.jpg" alt="cat3">
+		<img class="pictures" src="static/cat4.jpg" alt="cat4">
+	</div>
+	
+	
+
+</body>
+
+</html>

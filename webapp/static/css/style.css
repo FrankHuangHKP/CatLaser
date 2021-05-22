@@ -1,0 +1,104 @@
+html{
+	max-width: 1250px;
+	margin: auto;
+}
+
+.head {
+	display: flex;
+	flex-flow: row;
+}
+
+.logo {	
+	padding-left: 10px;
+	width: 70px;
+}
+
+h1 {
+	color: rgb(227,150,35);
+	margin-left: 115px;
+}
+
+p {
+	
+	font-size: 24px;
+	font-weight: bolder;
+	margin: 10px;
+	margin-top: 50px;
+}
+
+.cats {
+	width: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 30px;
+}
+
+aside{
+	display:flex;
+	flex-flow:column;
+	width: 150 px;
+	padding-right:0px;
+}
+
+label {
+	font-size: 22px;
+}
+
+.all {
+	display: flex;
+	flex-flow: row;
+}
+
+.left {
+	width: 55%;
+}
+
+.right {
+	padding-left: 30px;
+	width: 20%;
+}
+
+.laser-input {
+	padding: 10px;
+}
+
+#x {
+	width: 50px;
+}
+
+#x-label {
+	padding-left: 100px;
+}
+
+#y {
+	width: 50px;
+}
+
+#y-label {
+	padding-left: 100px;
+}
+
+#video {
+	width: 640px;
+}
+
+.hidden {
+	display: none;
+}
+
+.submit {
+	font-size: 18px;
+	margin: 30px;
+	margin-left: 100px;
+}
+
+.images{
+	display: flex;
+	flex-flow: row;
+}
+
+.pictures {
+	width: 300px;
+	margin: 10px;
+	border-radius: 0.8em;
+}

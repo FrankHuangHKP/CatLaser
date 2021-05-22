@@ -1,0 +1,1 @@
+{'laser': 'off', 'mode': 'manual', 'x': '333', 'y': '250'}
